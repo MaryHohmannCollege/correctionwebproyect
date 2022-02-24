@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #element{
+            display: flex;
+            justify-content: center;
+        }#element a span:first-child{
+            display: inline-block;
+            padding: 10px;
+        }#element a{
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }#element a span:last-child{
+            position: absolute;
+            top: 0;
+            right: 0;
+             left: 0;
+             bottom: 0;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             transform: translateY(-100%);
+        }#element a span{
+            transition: transform 0.25s ease-out;
+        }#element a:hover span:first-child{
+            transform:translateY(100%);
+        }#element a:hover span:last-child{
+            transform: none;
+        }
+        #rotate{
+            transition: all 0.3s ease;
+        }#rotate:hover{
+-webkit-transform:rotateZ (-30deg);
+-ms-transform:rotateZ (-30deg);
+transform:rotateZ (-30deg);
+border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecera">
+        <div id="element">
+            <a href="#0">
+                <span>
+                    <img src="./iconos/whatsapp.png" alt="Icono Wa">
+                    <img src="./iconos/telegram.png" alt="">
+                </span>
+                <span>
+                    <i class="textoImg" aria-hidden="true">2291898989</i>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div id="rotate">
+        HOla
+    </div>
+
+</body>
+</html>

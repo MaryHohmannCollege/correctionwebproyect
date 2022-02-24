@@ -1,0 +1,288 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'EB Garamond', serif;
+}
+
+body{
+  background-color: transparent;
+}
+
+header{
+  height: 60px;
+  background-color: #eee;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 6px 0;
+  position: relative;
+}#uicon{
+  height: 50px;
+}
+/*#logo{
+color: rgb(255, 255, 255);
+font-weight: 800;
+text-shadow: 2px 2px 2px #111;
+}*/
+
+nav > a {
+  font-size: 15px;
+  color: rgb(104, 1, 1);
+  text-decoration: none;
+  padding: 0 10px;
+  font-weight: 900;
+  /*text-shadow: 2px 2px 2px #333;*/
+  transition: .2s;
+}
+
+nav > a:hover{
+  color:rgb(255, 98, 25);
+}
+#mostrar-menu, #ocultar-menu{
+font-size: 1.2rem;
+cursor: pointer;
+/*display: none;*/
+transition: 0.4s;
+display: none;
+color:rgb(255, 98, 25);
+text-shadow: 2px 2px 2px #111;
+}
+#mostrar-menu{
+order: 1;
+}
+#mostrar-menu:hover, #ocultar-menu:hover{
+color:rgb(255, 98, 25);
+}
+#check{
+  display: none;
+}
+#banner{
+  padding: 0 50px;;
+  height: 80vh;
+  background-image: url(./fotos/olympo/uni.jpg);
+  background-size: cover;
+  background-position: center;
+}#banner::before{
+  content: "";
+  background-color: rgba(255, 98, 25, .4);
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  left: 0;
+}#contenido-banner{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}#contenido-banner *{
+  color: white;
+  text-decoration: none;
+}#verlm{
+  border-bottom: 4px solid rgb(255, 98, 25);
+  align-self: baseline;
+  background-color: rgba(90,90,90, .6);
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 5px 0 0;
+  font-weight: 900;
+}
+#escuela{
+  background-color: rgb(104, 1, 1);
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 6px 0 #111;
+  position: relative;
+}#uver{
+  width: 98%;
+  height: 190px;
+  background-image: url(./fotos/olympo/COVID-5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 1rem auto;
+}#mvv{
+  text-shadow: 1px 1px 2px #333;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}.cont-part-inf{
+  width: 30%;
+  margin: auto;
+}#recomendacion{
+  background-color: #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}.contenidopro{
+  width: 45%;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  color: black;
+}.contenidopro > #fotoprof1{
+  background-image: url(./fotos/olympo/prof1.jpg);
+  background-size: cover;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  border: 10px solid rgb(75, 75, 75);
+  box-shadow: 0 0 6px 0 #222;
+}.contenidopro > #fotoprof2{
+  background-image: url(./fotos/olympo/prof2.jpg);
+  background-size: cover;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  border: 10px solid transparent;
+  border: 10px solid rgb(75, 75, 75);
+  box-shadow: 0 0 6px 0 #222;
+}#carrerasymaestrias{
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  align-items: center;
+ justify-content: center;
+ box-shadow: 0 0 6px 0 #111;
+ position: relative;
+}.contcarr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}.contcarr h3{
+  border-bottom: 1px solid #ccc
+}.contenedorlym{
+  display: flex;
+  flex-direction: row;
+  margin: 25px auto;
+}#contenedorLic{
+  border-right: 1px solid #DDD;
+}.carrera{
+  width: auto;
+  height: auto;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  background-color: rgb(95, 0, 0);
+  margin: 15px;
+  box-shadow: 0 0 6px 0 #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}.carrera > img{
+  width: 100px;
+  height: 100px;
+}#formulariodecomunicacion{
+  background-color: #eee;
+  color: #444;
+  width: 100%;
+  padding: 10px 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+}#formulariodecomunicacion p{
+  border-bottom: 1px solid #ccc;
+}#formu-{
+  width: 70%;
+}form{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  text-align: start;
+}input[type="text"]{
+  padding: 5px 20px;
+  margin: 10px 0;
+}input[type="submit"]{
+  min-width: 180px;
+  max-width: 180px;
+  height: 30px;
+  margin: 5px auto;
+  cursor: pointer;
+  transition: .6s;
+  background-color: #111;
+  border-radius: none;
+  border: 0;
+  color:rgb(255, 255, 255);
+  box-shadow: 0 0 6px 0 #222;
+  font-size: 1.2rem;
+}input[type=submit]:hover{
+  background-color: rgb(104, 1, 1);
+  color: #EEE;
+  min-width: 200px;
+  max-width: 200px;
+}
+footer{
+  height: 50vh;
+  width: 100%;
+  background-color: rgb(95, 0, 0);
+  box-shadow: 0 0 6px 0 #111;
+  color: white;
+}
+
+/* menu-responsivo*/
+@media(max-width: 768px){
+  #mostrar-menu, #ocultar-menu{
+    display: block;
+  }.menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #888;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0;
+    transition: .6s;
+    z-index: 100;
+  }.menu a{
+    display: block;
+    padding: 20px 0;
+  }#ocultar-menu{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    font-size: 50px;
+  }#check:checked ~ .menu{
+    right: 0;
+  }#escuela{
+    height: auto;
+  }#mvv{
+    display: flex;
+    flex-direction: column;
+  }.cont-part-inf{
+    width: 95%;
+    margin: 5px auto;
+   }#recomendacion{
+    flex-direction: column;
+  }.contenidopro{
+    width: 85%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #222;
+  }#carrerasymaestrias{
+    flex-direction: column;
+    height: auto;
+  }.contenedorlym{
+    flex-direction: column;
+  }
+}
